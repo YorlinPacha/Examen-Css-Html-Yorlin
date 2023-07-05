@@ -1,11 +1,11 @@
 
 Descripcion:
 
-Landing page con tematica de viajes espaciales fue creada con las tecnologias HTMLy CSS3, se manejo para algunos elementos puntuales bootstrap.
+Landing page con tematica de viajes espaciales fue creada con las tecnologias HTML, CSS3 y javaScript, se manejo para algunos elementos puntuales bootstrap.
 La pagina consta se varias secciones donde se pueden acceder facilmente a ella con enlaces "ancla" o internos, consta de otro enlace externo donde nos lleva a una pagina
 para enviar un correo electonico.
 
-Esta web tiene un formulario donde se han combonida varias entradas imput como radio y checkbox. a la hora de enviar el formulario los datos de cargaran y se mostraran en una
+Esta web tiene un formulario donde se han combinado varias entradas imput como radio y checkbox. a la hora de enviar el formulario los datos de cargaran y se mostraran en una
 futura web.
 
 Recursos:
@@ -13,7 +13,7 @@ Se usaron recursos externos para la recopilacion de imagenes y algunos estilos p
 
 Funcionalidades:
 -La pagina es responsive tanto para dispositivos moviles como para tablets.
--El formulario re copila toda la informacion del usuario, la almacena en variables y luego las muestra en un campo donde mostrara la verificacion de los datos que se han
+-El formulario recopila toda la informacion del usuario, la almacena en variables y luego las muestra en un campo donde mostrara la verificacion de los datos que se han
  enviado.
 -Antes de enviarse el formulario, tienes que aceptar el check de confirmacion de politicas de privaciodad, este habilitara el boton de envio.
 -Cuenta con un slider de imagenes automatico realizado todo con javaScript

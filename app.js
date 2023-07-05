@@ -82,23 +82,14 @@ let checkbox = document.getElementById("okayCheckbox");
 let boton = document.getElementById("botonCheck");
 boton.disabled = true;
 
-checkbox.addEventListener("change", habilitar);
+checkbox.addEventListener("change", habilitarCheck);
 
-function habilitar(event) {
+function habilitarCheck(event) {
   let pulsado = checkbox.checked;
-  console.log(pulsado);
-
-  // if (pulsado == true) {
-  //   boton.disabled = false;
-  // } else {
-  //   boton.disabled = true;
-  // }
-
   switch (pulsado) {
     case true:
       boton.disabled = false;
       break;
-
     case false:
       boton.disabled = true;
       break;
