@@ -11,3 +11,21 @@ futura web.
 Recursos:
 Se usaron recursos externos para la recopilacion de imagenes y algunos estilos para nuestra web.
 
+Funcionalidades:
+-La pagina es responsive tanto para dispositivos moviles como para tablets.
+-El formulario re copila toda la informacion del usuario, la almacena en variables y luego las muestra en un campo donde mostrara la verificacion de los datos que se han
+ enviado.
+-Antes de enviarse el formulario, tienes que aceptar el check de confirmacion de politicas de privaciodad, este habilitara el boton de envio.
+-Cuenta con un slider de imagenes automatico realizado todo con javaScript
+-En el footer tiene un campo donde automaticamente mostrara la fecha y la hora actual
+
+Posicionamiento WEB (SEO):
+-Esta web cuenta con varias etiquetas meta que hacen que se cumpla un buen SEO basico en nuestra web
+
+<title>Los meta tags más importantes y su función | IONOS</title> 
+<meta name="description" content="Los meta tags de HTML codifican información para ser interpretada por el navegador y los buscadores"/>
+<meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+<meta name="author" content="Nombre del autor" />
+<meta name="copyright" content="Propietario del copyright" />
+<meta name="robots" content="index,follow" />
+

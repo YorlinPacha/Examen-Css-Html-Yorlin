@@ -111,6 +111,38 @@
   height: 3rem;
 }
 
+/* -------------------------------- slider---------------------- */
+.contenedorSlider{
+  display: flex;
+  justify-content: center;
+}
+
+/* .section_hero{
+  max-width: 70rem;
+} */
+
+.clipped {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+  min-height: 350px;
+  /* background-image: url(https://images.unsplash.com/photo-1614315517650-3771cf72d18a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGFzdHJvbmF1dGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60); */
+  background-position: center;
+  background-size: cover;
+  
+}
+.section_hero{
+    width: 63rem;
+}
+
+
+@media screen and (max-width: 650px){
+  .headline {
+    left: 20px;
+  } 
+  .clipped {
+    clip-path: none;
+    max-height: 300px !important;
+  }
+}
 /* --------------Titulo-------------- */
 .titulo{
   display: flex;
@@ -173,11 +205,6 @@
 
 }
 
-/*  Invertir el orden de la imagen y el contenido */
-/* .feature-list--reverse {
-  flex-direction: row-reverse;
-} */
-
 .feature-list__image1 {
   width: 15rem;
   height: 15rem;
@@ -212,7 +239,7 @@
   margin-top: 2rem;
 }
 
-/* <!-- ---------------bloque de cards --------------- --> */
+/* <!-- ----------------------------------------bloque de cards --------------- --> */
 
 /* ----------------------contenido con las tarjetas---------------------- */
 .contenido{
@@ -521,7 +548,7 @@
 /* --------------------- Estilos footer----------------------- */
 .footer_contenedor {
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   background: #000;
   display: flex;
   flex-direction: row;

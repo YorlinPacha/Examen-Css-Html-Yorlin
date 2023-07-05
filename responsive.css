@@ -107,6 +107,11 @@
   .bloque-info{
     flex-direction: column;
   }
+
+  .titulo {
+    margin: 5rem auto;
+  }
+
   .comentarios{
     align-items: center;
     justify-content: center;
@@ -139,6 +144,6 @@
   .footer_contenedor {
     padding: 0 1rem;
     flex-direction: column;
-    height: 17rem;
+    height: 21rem;
   }
 }

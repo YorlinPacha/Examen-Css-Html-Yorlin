@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Space Travel es una nueva agencia espacial del pais vasco para todo publico, nuestra meta es llevar a todos al espacio con
+    los precios mas bajos del mercado.">
+    <!-- indexar esta pagina -->
+    <meta name="keywords" content="vuelos espaciales, espacio, pais vasco"/>
+    <meta name="author" content="Yorlin Fabian Pachajoa Rendon" />
+    <meta name="copyright" content="Yorlin Fabian Pachajoa Rendon" />
+    <meta name=”robots” content=”index, follow”>
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +19,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/responsive.css">
-    <title>Space Travel</title>
+    <title>Space Travel | Viajes espaciales</title>
   </head>
   <body>
     <!-- --------------------------- Barra Menu ------------------------------ -->
@@ -54,6 +62,28 @@
     <div class="titulo">
       <h2 class="titulo_nosotros" id="nosotros">Nosotros</h2>
     </div>
+    <!-- --------------------Bloque slider------------------ -->
+    <section class="contenedorSlider">
+      <div class="section_hero">
+        <div
+          class="d-sm-flex align-items-center justify-content-between">
+          <div class="col-md-4 mx-auto mb-4 mb-sm-0 headline">
+            <h1 class="display-4 my-4 font-weight-bold">
+              Empieza una aventura <span style="color: #615E63">con nosotros</span>
+            </h1>
+            <!-- <a
+              href="#"
+              class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+              style="border-radius: 30px; background-color: #615E63"
+              >Get Started</a
+            > -->
+          </div>
+          <!-- in mobile remove the clippath -->
+          <div id="sliderChange"class="col-md-8 h-100 clipped"></div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ------------- bloque imagen con texto-------------------------- -->
     <div class="bloque-info bloque">
@@ -68,7 +98,7 @@
 
           <!-- Right side -->
           <div class="feature-list__desc">
-            <h1 class="texto-feature">Despega tus pies de la tierra</h1>
+            <h2 class="texto-feature">Despega tus pies de la tierra</h2>
             <p class="parrafo-feature">
               Somos una compañia que trata de realizar tus sueños, consectetur
               adipisicing elit. Fuga, deserunt ratione? Praesentium sunt
@@ -89,7 +119,7 @@
 
           <!-- Right side -->
           <div class="feature-list__desc">
-            <h1 class="texto-feature">Atrevete a ser diferente</h1>
+            <h2 class="texto-feature">Atrevete a ser diferente</h2>
             <p class="parrafo-feature">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
               deserunt ratione? Praesentium sunt aliquam, error voluptatem
@@ -222,7 +252,7 @@
             class="p-3 mt-5 shadow border"
             action="/respuesta.html"
           >
-            <h2 class="text-center .text-dark">Formulario</h2>
+            <h3 class="text-center .text-dark">Queremos saber de ti</h3>
 
             <input
               id="nombre"
@@ -268,7 +298,7 @@
                 />
                 <span class="radio-tile">
                   <span class="radio-icon">
-                    <img src="./img/mujer.png" alt="icono de una mujer" />
+                    <img src="./img/mujer.png" alt="icono de una mujer" title="icono mujer"/>
                   </span>
                   <span class="radio-label">Mujer</span>
                 </span>
@@ -283,7 +313,7 @@
                 />
                 <span class="radio-tile">
                   <span class="radio-icon">
-                    <img src="./img/hombre.png" alt="icono de un hombre" />
+                    <img src="./img/hombre.png" alt="icono de un hombre" title="icono hombre"/>
                   </span>
                   <span class="radio-label">Hombre</span>
                 </span>
@@ -301,6 +331,7 @@
                     <img
                       src="./img/niñ@.png"
                       alt="icono de un niño o una niña"
+                      title="icono niñ@"
                     />
                   </span>
                   <span class="radio-label">Niñ@</span>
@@ -308,16 +339,16 @@
               </label>
             </div>
             <div class="form--marketing">
-              <input id="okayCheckbox" type="checkbox" />
+              <input id="okayCheckbox" type="checkbox" value="" />
               <label for="okayCheckbox" class="checkbox">
                 Aceptas politicas de privacidad?
               </label>
             </div>
-            <button class="btn btn-dark mt-2" type="submit">Enviar</button>
+            <button  id="botonCheck" disabled class="btn btn-dark mt-2" type="submit">Enviar</button>
           </form>
           <hr />
 
-          <!-- <h3 id="respuesta" class="text-center fw-light"></h3> -->
+          <h3 id="respuesta" class="text-center fw-light"></h3>
         </div>
       </div>
     </div>
@@ -331,12 +362,9 @@
           </div>
           <div class="item_footer footer2">
             <h4>Vuela con nosotros</h4>
-            <!-- <a class="enlace_footer" href="" target="_blank"
-              ><i class="fa-brands fa-instagram fa-2xl"></i
-            ></a>
-            <a class="enlace_footer" href="" target="_blank"
-              ><i class="fa-brands fa-facebook fa-2xl"></i
-            ></a> -->
+            <!-- Style en linea no recomendado, solo puesto por practicidad  -->
+            <p id="fecha" style="display: inline;"></p>
+            <p id="hora" style="display: inline;"></p>
           </div>
           <div class="item_footer footer1">
             <h4>Contactanos</h4>
@@ -344,5 +372,6 @@
           </div>
         </div>
       </footer>
+      <script src="./app.js"></script>
   </body>
 </html>
